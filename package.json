@@ -1,0 +1,11 @@
+{
+  "name": "node-request-bin",
+  "version": "1.0.0",
+  "description": "A lightweight Node.js HTTP server that logs incoming requests with method, headers, and body. Additional information about viewing the request in a web browser and generating cURL requests from incoming requests",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
