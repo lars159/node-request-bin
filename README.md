@@ -11,7 +11,9 @@ Node Request Bin is a lightweight Node.js HTTP server that provides a simple way
  
 ## Getting Started
 
-Copy index.js and run node index.js
+1. Clone (git clone https://github.com/yourusername/node-request-bin.git) or Copy index.js
+
+2. node index.js
 
 ### Prerequisites
 
