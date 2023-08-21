@@ -15,6 +15,8 @@ Node Request Bin is a lightweight Node.js HTTP server that provides a simple way
 
 2. node index.js
 
+3. For sending request the default port is 127.0.0.1:3001 and you can view the result in the console or on the webserver 127.0.0.1:3002
+
 ### Prerequisites
 
 Make sure you have the following software installed before setting up and running Node Request Bin:
