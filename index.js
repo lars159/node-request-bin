@@ -51,6 +51,7 @@ const webPageServer = http.createServer((req, res) => {
     <!DOCTYPE html>
     <html>
     <head>
+      <meta http-equiv="refresh" content="2">
       <title>Node request bin</title>
     </head>
     <body>
@@ -88,11 +89,11 @@ function createCurlString(requestOptions) {
   const { method, url, headers, body } = requestOptions;
 
   let curlString = `curl -X ${method} '127.0.0.1:${PORT}'`;
-
+ /*
   for (const header in headers) {
     curlString += ` -H '${header}:${headers[header]}'`;
   }
-
+*/
   if (body) {
     curlString += ` -d '${JSON.stringify(body)}'`;
   }
