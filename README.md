@@ -3,6 +3,7 @@
 Node Request Bin is a lightweight Node.js HTTP server that provides a simple way to log incoming HTTP requests. It captures various details of incoming requests, including the HTTP method, headers, and body, allowing you to inspect and analyze incoming traffic. This tool is particularly useful for debugging and testing webhook integrations or APIs.
 
 ![Node Request Bin Screenshot](Demo.png)
+![Node Request Bin Screenshot](Demo2.png)
 
 ## Features
 

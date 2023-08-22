@@ -51,11 +51,41 @@ const webPageServer = http.createServer((req, res) => {
     <!DOCTYPE html>
     <html>
     <head>
-      <meta http-equiv="refresh" content="2">
+	  <style>
+	     body {
+            font-family: Roboto, sans-serif;
+        }
+	  table {
+		  border-collapse: collapse;
+		  width: 100%;
+		  border: 1px solid #ddd;
+		}
+
+		/* Style the table header */
+		th {
+		  background-color: #f2f2f2;
+		  border: 1px solid #ddd;
+		  padding: 8px;
+		  text-align: left;
+		}
+
+		/* Style alternating rows */
+		tr:nth-child(even) {
+		  background-color: #f2f2f2;
+		}
+
+		/* Style table cells */
+		td {
+		  border: 1px solid #ddd;
+		  padding: 8px;
+		}
+		</style>
+	  <meta http-equiv="refresh" content="2">
       <title>Node request bin</title>
     </head>
     <body>
-      <h1>Incoming request Table</h1>
+      <h1>Incoming request  </h1>
+	  <p>Send request to http://127.0.0.1:${PORT}</p>
       <table border="1">
         <thead>
           <tr>
@@ -89,7 +119,7 @@ function createCurlString(requestOptions) {
   const { method, url, headers, body } = requestOptions;
 
   let curlString = `curl -X ${method} '127.0.0.1:${PORT}'`;
- /*
+/*
   for (const header in headers) {
     curlString += ` -H '${header}:${headers[header]}'`;
   }
